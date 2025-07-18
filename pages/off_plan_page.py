@@ -6,4 +6,4 @@ class OffPlanPage(Page):
     SETTINGS_BUTTON = (By.CSS_SELECTOR, '[href="/settings"]')
 
     def click_settings(self):
-        self.click(*self.SETTINGS_BUTTON)
+        self.wait_for_element_to_click(*self.SETTINGS_BUTTON)

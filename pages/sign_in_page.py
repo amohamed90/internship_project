@@ -8,7 +8,7 @@ class SignIn(Page):
     CONTINUE_FIELD = (By.CSS_SELECTOR, '.login-button')
 
     username = 'alaa.mohamed@dealpath.com'
-    password = 'Dealpath@1'
+    password = '**********'
 
     def input_username(self):
         self.input_text(self.username, *self.USERNAME_FIELD)

@@ -6,4 +6,4 @@ class SettingsPage(Page):
     SUBSCRIPTION_PAYMENT = (By.CSS_SELECTOR, '[href="/subscription"]')
 
     def click_subscription_payment(self):
-        self.click(*self.SUBSCRIPTION_PAYMENT)
+        self.wait_for_element_to_click(*self.SUBSCRIPTION_PAYMENT)
